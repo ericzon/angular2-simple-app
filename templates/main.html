@@ -1,10 +1,8 @@
-<h1>Angular 2 - Simple App</h1>
+<h1>{{appTitle}}</h1>
 <nav>
 	<a [routerLink]="['MainView']">Home</a>
 	<a [routerLink]="['StaticView']">Static page</a>
 	<a [routerLink]="['ListView']">List</a>
-	<!--
-	<a [routerLink]="['ItemView']">Item</a>
-	-->
+	<a [routerLink]="['ItemView',{id:1}]">Item</a>
 </nav>
 <router-outlet></router-outlet>

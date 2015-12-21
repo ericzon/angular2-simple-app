@@ -37,5 +37,5 @@ import {DataService} from './data.service';
 	}
 ])
 export class AppComponent {
-	public title = 'Main title';
+	public appTitle = 'Angular 2 - Simple App';
 }
