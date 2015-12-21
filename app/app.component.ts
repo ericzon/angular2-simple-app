@@ -19,7 +19,7 @@ import {StaticComponent} from './static.component';
 		useAsDefault: true
 	},
 	{
-		path: '/list/:id', 
+		path: '/list', 
 		name: 'ListView',
 		component: ListComponent
 	},
