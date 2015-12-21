@@ -1,5 +1,4 @@
 import {Component} from 'angular2/core';
-//import {RouterConfig, ROUTER_DIRECTIVES} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {HomeComponent} from './home.component';
 import {ListComponent} from './list.component';
@@ -8,12 +7,9 @@ import {StaticComponent} from './static.component';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'templates/tpl1.html',
+    templateUrl: 'templates/main.html',
 	directives: [ROUTER_DIRECTIVES],
-	styles: [`
-		a {padding: 5px;text-decoration: none;}
-		a:visited, a:link {color: #444;} a:hover {color: white; background-color: #1171a3;} a.router-link-active {color: white; background-color: #52b9e9;} '
-	`]
+	styleUrls: ['css/menu-links.css']
 })
 @RouteConfig([
 	{
