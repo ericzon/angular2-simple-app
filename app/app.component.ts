@@ -4,12 +4,14 @@ import {HomeComponent} from './home.component';
 import {ListComponent} from './list.component';
 import {ItemComponent} from './item.component';
 import {StaticComponent} from './static.component';
+import {DataService} from './data.service';
 
 @Component({
     selector: 'my-app',
     templateUrl: 'templates/main.html',
 	directives: [ROUTER_DIRECTIVES],
-	styleUrls: ['css/menu-links.css']
+	styleUrls: ['css/menu-links.css'],
+	providers: [DataService]
 })
 @RouteConfig([
 	{
@@ -36,8 +38,4 @@ import {StaticComponent} from './static.component';
 ])
 export class AppComponent {
 	public title = 'Main title';
-	public field1: boolean = false;
-	public method1(): void {
-		console.log("TEST method1 executed!");
-	}
 }

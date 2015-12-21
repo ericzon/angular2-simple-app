@@ -2,7 +2,7 @@ import {Component, OnInit} from 'angular2/core';
 import {DataService} from './data.service';
 
 @Component({
-	template: `<h2>list content</h2>
+	template: `<h2>List content</h2>
 	<ul>
       <li *ngFor="#item of items">{{item.name}}</li>
     </ul>`
